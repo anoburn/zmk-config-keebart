@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 
 / {
     chosen { zmk,physical-layout = &default_layout; };
@@ -253,7 +254,7 @@
         };
 
         combo_right_bt {
-            bindings = <&tog 6>;
+            bindings = <&m_bt>;
             key-positions = <9 23 12 26>;
         };
 
@@ -437,6 +438,13 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp C &kp H>;
             label = "M_SCH";
+        };
+
+        m_bt: m_bt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 6 &rgb_ug RGB_TOG &rgb_ug RGB_COLOR_HSB(249,95,53)>;
+            label = "M_BT";
         };
     };
 
