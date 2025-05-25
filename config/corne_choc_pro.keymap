@@ -430,6 +430,11 @@
             key-positions = <23 24 25 26>;
             layers = <1>;
         };
+
+        combo_rgb_toggle {
+            bindings = <&rgb_ug RGB_TOG>;
+            key-positions = <29 30 31 32 35 36 37 38>;
+        };
     };
 
     macros {
