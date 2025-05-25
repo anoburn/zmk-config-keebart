@@ -131,9 +131,10 @@
             key-positions = <23 11>;
         };
 
-        combo_right_space {
-            bindings = <&kp SPACE>;
+        combo_right_ardux {
+            bindings = <&to 1>;
             key-positions = <23 24 25 26>;
+            layers = <0>;
         };
 
         combo_right_sch {
@@ -376,11 +377,6 @@
             key-positions = <18 2>;
         };
 
-        combo_left_space {
-            bindings = <&kp SPACE>;
-            key-positions = <18 17 16 15>;
-        };
-
         combo_left_sch {
             bindings = <&m_sch>;
             key-positions = <18 16 15 3>;
@@ -414,6 +410,24 @@
         combo_left_underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <4 17 15>;
+        };
+
+        combo_left_ardux {
+            bindings = <&to 1>;
+            key-positions = <18 17 16 15>;
+            layers = <0>;
+        };
+
+        combo_left_qwerty {
+            bindings = <&to 0>;
+            key-positions = <18 17 16 15>;
+            layers = <1>;
+        };
+
+        combo_right_qwerty {
+            bindings = <&to 0>;
+            key-positions = <23 24 25 26>;
+            layers = <1>;
         };
     };
 
