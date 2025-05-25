@@ -138,8 +138,127 @@
         };
 
         combo_right_sch {
-            bindings = <&none>;
+            bindings = <&m_sch>;
             key-positions = <23 10 25 26>;
+        };
+
+        combo_right_dot {
+            bindings = <&kp KP_DOT>;
+            key-positions = <9 24>;
+        };
+
+        combo_right_colon {
+            bindings = <&kp COLON>;
+            key-positions = <9 24 25>;
+        };
+
+        combo_right_comma {
+            bindings = <&kp KP_COMMA>;
+            key-positions = <9 25>;
+        };
+
+        combo_right_semicolon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <9 25 26>;
+        };
+
+        combo_right_minus {
+            bindings = <&kp KP_MINUS>;
+            key-positions = <9 26>;
+        };
+
+        combo_right_underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <9 24 26>;
+        };
+
+        combo_right_apostrophe {
+            bindings = <&kp SQT>;
+            key-positions = <11 26>;
+        };
+
+        combo_right_dquotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <10 26>;
+        };
+
+        combo_right_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <23 10>;
+        };
+
+        combo_right_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <10 25>;
+        };
+
+        combo_right_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <9 10 26>;
+        };
+
+        combo_right_shift {
+            bindings = <&mt LSHIFT LSHIFT>;
+            key-positions = <23 10 11 12>;
+        };
+
+        combo_right_shiftlock {
+            bindings = <&kt LEFT_SHIFT>;
+            key-positions = <9 24 25 26>;
+        };
+
+        combo_right_ctrl {
+            bindings = <&none>;
+            key-positions = <12 23>;
+        };
+
+        combo_right_gui {
+            bindings = <&none>;
+            key-positions = <24 12>;
+        };
+
+        combo_right_alt {
+            bindings = <&none>;
+            key-positions = <25 12>;
+        };
+
+        combo_right_enter {
+            bindings = <&kp KP_ENTER>;
+            key-positions = <9 23>;
+        };
+
+        combo_right_shift_enter {
+            bindings = <&kp LS(KP_ENTER)>;
+            key-positions = <23 9 12>;
+        };
+
+        combo_right_tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 24>;
+        };
+
+        combo_right_exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <11 25>;
+        };
+
+        combo_right_question {
+            bindings = <&kp QUESTION>;
+            key-positions = <12 26>;
+        };
+
+        combo_right_bt_clear_profile {
+            bindings = <&bt BT_CLR>;
+            key-positions = <10 11 24 25>;
+        };
+    };
+
+    macros {
+        m_sch: m_sch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp C &kp H>;
+            label = "M_SCH";
         };
     };
 
@@ -175,15 +294,15 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&kp TAB    &kp N1        &kp N2           &kp N3        &kp N4        &kp N5          &kp LCTRL  &kp RCTRL  &kp N6    &kp N7    &kp N8     &kp N9     &kp N0  &kp BSPC
-&kp LCTRL  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LALT   &kp RALT   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans  &trans
-&kp LSHFT  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                        &trans    &trans    &trans     &trans     &trans  &trans
-                                          &kp LGUI      &trans        &kp SPACE                             &kp LGUI  &trans    &kp SPACE
+&kp TAB    &kp N1        &kp N2           &kp N3        &kp N4        &kp N5          &kp LCTRL  &none  &lt 4 A   &kp R   &lt 7 T    &lt 2 O      &none   &none
+&kp LCTRL  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LALT   &none  &lt 3 E   &kp S   &lt 8 I    &lt 5 SPACE  &trans  &trans
+&kp LSHFT  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                    &trans    &trans  &trans     &trans       &trans  &trans
+                                          &kp LGUI      &trans        &kp SPACE                         &kp LGUI  &trans  &kp SPACE
             >;
         };
 
-        raise_layer {
-            display-name = "SYMBOL";
+        number_layer {
+            display-name = "NUMBER";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  | BSPC |
@@ -192,15 +311,15 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp LCTRL  &kp RCTRL  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans     &kp LALT   &kp RALT   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans                           &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE                        &kp RET    &trans     &kp RALT
+&none  &none  &kp N3  &kp N2  &kp N1  &none   &none  &none  &none   &kp N1  &kp N2  &kp N3  &none  &none
+&none  &none  &kp N6  &kp N5  &kp N4  &none   &none  &none  &none   &kp N4  &kp N5  &kp N6  &none  &none
+&none  &none  &none   &none   &none   &none                 &none   &none   &none   &none   &none  &none
+                      &trans  &trans  &trans                &trans  &trans  &trans
             >;
         };
 
-        extra_layer_1 {
-            display-name = "EXTRA 1";
+        symbol_layer {
+            display-name = "SYMBOL";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -209,8 +328,8 @@
             >;
         };
 
-        extra_layer_2 {
-            display-name = "EXTRA 2";
+        paren_layer {
+            display-name = "PAREN";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -219,8 +338,8 @@
             >;
         };
 
-        extra_layer_3 {
-            display-name = "EXTRA 3";
+        nav_layer {
+            display-name = "NAV";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -229,8 +348,8 @@
             >;
         };
 
-        extra_layer_4 {
-            display-name = "EXTRA 4";
+        bt_layer {
+            display-name = "BT";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -239,8 +358,8 @@
             >;
         };
 
-        extra_layer_5 {
-            display-name = "EXTRA 5";
+        media_layer {
+            display-name = "MEDIA";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -249,14 +368,36 @@
             >;
         };
 
-        extra_layer_6 {
-            display-name = "EXTRA 6";
+        copy_layer {
+            display-name = "COPY";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                  &trans  &trans  &trans
             >;
+        };
+
+        big_sym_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                  &trans  &trans  &trans
+            >;
+
+            label = "BIG_SYM";
+        };
+
+        big_function_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                  &trans  &trans  &trans
+            >;
+
+            label = "BIG_FUNC";
         };
     };
 };
