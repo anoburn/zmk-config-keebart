@@ -154,7 +154,7 @@
         };
 
         combo_right_comma {
-            bindings = <&kp KP_COMMA>;
+            bindings = <&kp COMMA>;
             key-positions = <9 25>;
         };
 
