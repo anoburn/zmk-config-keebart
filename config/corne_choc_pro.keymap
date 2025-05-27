@@ -133,7 +133,7 @@
         };
 
         combo_right_ardux {
-            bindings = <&to 1>;
+            bindings = <&m_to_ardux>;
             key-positions = <23 24 25 26>;
             layers = <0>;
         };
@@ -414,19 +414,19 @@
         };
 
         combo_left_ardux {
-            bindings = <&to 1>;
+            bindings = <&m_to_ardux>;
             key-positions = <18 17 16 15>;
             layers = <0>;
         };
 
         combo_left_qwerty {
-            bindings = <&to 0>;
+            bindings = <&m_to_qwerty>;
             key-positions = <18 17 16 15>;
             layers = <1>;
         };
 
         combo_right_qwerty {
-            bindings = <&to 0>;
+            bindings = <&m_to_qwerty>;
             key-positions = <23 24 25 26>;
             layers = <1>;
         };
@@ -450,6 +450,31 @@
             #binding-cells = <0>;
             bindings = <&tog 6 &rgb_ug RGB_TOG &rgb_ug RGB_COLOR_HSB(249,95,53)>;
             label = "M_BT";
+        };
+
+        m_blink_color: bt_test {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_param_1to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER &rgb_ug RGB_ON>,
+                <&macro_wait_time 2000>,
+                <&rgb_ug RGB_OFF>;
+
+            label = "BT_TEST";
+        };
+
+        m_to_ardux: to_ardux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 1 &m_blink_color RGB_COLOR_HSB_VAL(134,100,41)>;
+            label = "TO_ARDUX";
+        };
+
+        m_to_qwerty: m_to_qwerty {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &m_blink_color RGB_COLOR_HSB_VAL(31,100,46)>;
+            label = "M_TO_QWERTY";
         };
     };
 
