@@ -144,12 +144,12 @@
         };
 
         combo_right_dot {
-            bindings = <&kp KP_DOT>;
+            bindings = <&kp PERIOD>;
             key-positions = <9 24>;
         };
 
         combo_right_colon {
-            bindings = <&kp COLON>;
+            bindings = <&kp LS(PERIOD)>;
             key-positions = <9 24 25>;
         };
 
@@ -159,27 +159,27 @@
         };
 
         combo_right_semicolon {
-            bindings = <&kp SEMICOLON>;
+            bindings = <&kp LS(COMMA)>;
             key-positions = <9 25 26>;
         };
 
         combo_right_minus {
-            bindings = <&kp KP_MINUS>;
+            bindings = <&kp SLASH>;
             key-positions = <9 26>;
         };
 
         combo_right_underscore {
-            bindings = <&kp UNDERSCORE>;
+            bindings = <&kp LS(SLASH)>;
             key-positions = <9 24 26>;
         };
 
         combo_right_apostrophe {
-            bindings = <&kp SQT>;
+            bindings = <&kp LS(BACKSLASH)>;
             key-positions = <11 26>;
         };
 
         combo_right_dquotes {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp LS(NUMBER_2)>;
             key-positions = <10 26>;
         };
 
@@ -244,7 +244,7 @@
         };
 
         combo_right_question {
-            bindings = <&kp QUESTION>;
+            bindings = <&kp LS(MINUS)>;
             key-positions = <12 26>;
         };
 
@@ -384,32 +384,32 @@
         };
 
         combo_left_dot {
-            bindings = <&kp KP_DOT>;
+            bindings = <&kp DOT>;
             key-positions = <17 4>;
         };
 
         combo_left_colon {
-            bindings = <&kp COLON>;
+            bindings = <&kp LS(PERIOD)>;
             key-positions = <4 17 16>;
         };
 
         combo_left_comma {
-            bindings = <&kp KP_COMMA>;
+            bindings = <&kp COMMA>;
             key-positions = <4 16>;
         };
 
         combo_left_semicolon {
-            bindings = <&kp SEMICOLON>;
+            bindings = <&kp LS(COMMA)>;
             key-positions = <4 16 15>;
         };
 
         combo_left_minus {
-            bindings = <&kp KP_MINUS>;
+            bindings = <&kp SLASH>;
             key-positions = <4 15>;
         };
 
         combo_left_underscore {
-            bindings = <&kp UNDERSCORE>;
+            bindings = <&kp LS(SLASH)>;
             key-positions = <4 17 15>;
         };
 
