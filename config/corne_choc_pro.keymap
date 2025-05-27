@@ -457,7 +457,7 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_param_1to2 &rgb_ug RGB_COLOR_HSB_CMD MACRO_PLACEHOLDER &rgb_ug RGB_ON>,
-                <&macro_wait_time 2000>,
+                <&macro_wait_time 5000>,
                 <&rgb_ug RGB_OFF>;
 
             label = "BT_TEST";
