@@ -199,7 +199,7 @@
         };
 
         combo_right_shift {
-            bindings = <&mt LSHIFT LSHIFT>;
+            bindings = <&mod_hold_tap LSHIFT LSHIFT>;
             key-positions = <23 10 11 12>;
         };
 
@@ -209,17 +209,17 @@
         };
 
         combo_right_ctrl {
-            bindings = <&none>;
+            bindings = <&mod_hold_tap LCTRL LCTRL>;
             key-positions = <12 23>;
         };
 
         combo_right_gui {
-            bindings = <&none>;
+            bindings = <&kp LEFT_GUI>;
             key-positions = <24 12>;
         };
 
         combo_right_alt {
-            bindings = <&none>;
+            bindings = <&kp LEFT_ALT>;
             key-positions = <25 12>;
         };
 
@@ -435,6 +435,81 @@
             bindings = <&rgb_ug RGB_TOG>;
             key-positions = <29 30 31 32 35 36 37 38>;
         };
+
+        combo_left_apostrophe {
+            bindings = <&kp LS(BACKSLASH)>;
+            key-positions = <2 15>;
+        };
+
+        combo_left_dquotes {
+            bindings = <&kp LS(NUMBER_2)>;
+            key-positions = <3 15>;
+        };
+
+        combo_left_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <18 3>;
+        };
+
+        combo_left_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <3 16>;
+        };
+
+        combo_left_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <4 3 15>;
+        };
+
+        combo_left_shift {
+            bindings = <&mod_hold_tap LSHIFT LSHIFT>;
+            key-positions = <18 3 2 1>;
+        };
+
+        combo_left_shiftlock {
+            bindings = <&kt LEFT_SHIFT>;
+            key-positions = <4 15 16 17>;
+        };
+
+        combo_left_ctrl {
+            bindings = <&mod_hold_tap LCTRL LCTRL>;
+            key-positions = <18 1>;
+        };
+
+        combo_left_gui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <17 1>;
+        };
+
+        combo_left_alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <1 16>;
+        };
+
+        combo_left_enter {
+            bindings = <&kp KP_ENTER>;
+            key-positions = <4 18>;
+        };
+
+        combo_left_shift_enter {
+            bindings = <&kp LS(KP_ENTER)>;
+            key-positions = <4 18 1>;
+        };
+
+        combo_left_tab {
+            bindings = <&kp TAB>;
+            key-positions = <3 17>;
+        };
+
+        combo_left_exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <2 16>;
+        };
+
+        combo_left_question {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <1 15>;
+        };
     };
 
     macros {
@@ -475,6 +550,18 @@
             #binding-cells = <0>;
             bindings = <&to 0 &m_blink_color RGB_COLOR_HSB_VAL(31,100,46)>;
             label = "M_TO_QWERTY";
+        };
+    };
+
+    behaviors {
+        mod_hold_tap: mod_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_HOLD_TAP";
+            bindings = <&kp>, <&sk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            hold-while-undecided-linger;
         };
     };
 
