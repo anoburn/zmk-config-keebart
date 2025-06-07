@@ -624,20 +624,20 @@
         symbol_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &kp LS(GRAVE)  &kp LS(N5)  &kp LS(RIGHT_BRACKET)  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(RIGHT_BRACKET)  &kp LS(N5)  &kp LS(GRAVE)  &trans
+&trans  &kp GRAVE      &kp RA(Q)   &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans  &trans  &trans  &kp RIGHT_BRACKET      &kp RA(Q)   &kp GRAVE      &trans
+&trans  &trans         &trans      &trans                 &trans  &trans                  &trans  &trans  &trans                 &trans      &trans         &trans
+                                   &trans                 &trans  &trans                  &trans  &trans  &trans
             >;
         };
 
         paren_layer {
             display-name = "PAREN";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &kp RA(N7)  &kp RA(N8)  &kp LS(N8)  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(N8)  &kp RA(N8)  &kp RA(N7)  &trans
+&trans  &kp RA(N0)  &kp RA(N9)  &kp LS(N9)  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(N9)  &kp RA(N9)  &kp RA(N0)  &trans
+&trans  &trans      &trans      &trans      &trans  &trans                  &trans  &trans  &trans      &trans      &trans      &trans
+                                &trans      &trans  &trans                  &trans  &trans  &trans
             >;
         };
 
