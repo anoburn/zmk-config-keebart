@@ -21,116 +21,139 @@
         combo_right_f {
             bindings = <&kp F>;
             key-positions = <9 10>;
+            layers = <1>;
         };
 
         combo_right_g {
             bindings = <&kp G>;
             key-positions = <10 11>;
+            layers = <1>;
         };
 
         combo_right_j {
             bindings = <&kp J>;
             key-positions = <11 12>;
+            layers = <1>;
         };
 
         combo_right_v {
             bindings = <&kp V>;
             key-positions = <10 12>;
+            layers = <1>;
         };
 
         combo_right_y {
             bindings = <&kp DE_Y>;
             key-positions = <9 11>;
+            layers = <1>;
         };
 
         combo_right_w {
             bindings = <&kp W>;
             key-positions = <9 12>;
+            layers = <1>;
         };
 
         combo_right_z {
             bindings = <&kp DE_Z>;
             key-positions = <9 10 11 12>;
+            layers = <1>;
         };
 
         combo_right_c {
             bindings = <&kp C>;
             key-positions = <23 24>;
+            layers = <1>;
         };
 
         combo_right_u {
             bindings = <&kp U>;
             key-positions = <24 25>;
+            layers = <1>;
         };
 
         combo_right_n {
             bindings = <&kp N>;
             key-positions = <25 26>;
+            layers = <1>;
         };
 
         combo_right_h {
             bindings = <&kp H>;
             key-positions = <23 25>;
+            layers = <1>;
         };
 
         combo_right_k {
             bindings = <&kp K>;
             key-positions = <24 26>;
+            layers = <1>;
         };
 
         combo_right_b {
             bindings = <&kp B>;
             key-positions = <23 26>;
+            layers = <1>;
         };
 
         combo_right_d {
             bindings = <&kp D>;
             key-positions = <9 10 11>;
+            layers = <1>;
         };
 
         combo_right_x {
             bindings = <&kp X>;
             key-positions = <10 11 12>;
+            layers = <1>;
         };
 
         combo_right_q {
             bindings = <&kp Q>;
             key-positions = <9 11 12>;
+            layers = <1>;
         };
 
         combo_right_p {
             bindings = <&kp P>;
             key-positions = <23 25 26>;
+            layers = <1>;
         };
 
         combo_right_l {
             bindings = <&kp L>;
             key-positions = <23 24 25>;
+            layers = <1>;
         };
 
         combo_right_m {
             bindings = <&kp M>;
             key-positions = <24 25 26>;
+            layers = <1>;
         };
 
         combo_right_ae {
             bindings = <&kp DE_A_UMLAUT>;
             key-positions = <23 10 11>;
+            layers = <1>;
         };
 
         combo_right_oe {
             bindings = <&kp DE_O_UMLAUT>;
             key-positions = <23 11 12>;
+            layers = <1>;
         };
 
         combo_right_ue {
             bindings = <&kp DE_U_UMLAUT>;
             key-positions = <23 10 12>;
+            layers = <0 1>;
         };
 
         combo_right_sz {
             bindings = <&kp DE_SZ>;
             key-positions = <23 11>;
+            layers = <0 1>;
         };
 
         combo_right_ardux {
@@ -142,46 +165,55 @@
         combo_right_sch {
             bindings = <&m_sch>;
             key-positions = <23 10 25 26>;
+            layers = <0 1>;
         };
 
         combo_right_dot {
             bindings = <&kp PERIOD>;
             key-positions = <9 24>;
+            layers = <1>;
         };
 
         combo_right_colon {
             bindings = <&kp DE_COLON>;
             key-positions = <9 24 25>;
+            layers = <0 1>;
         };
 
         combo_right_comma {
             bindings = <&kp COMMA>;
             key-positions = <9 25>;
+            layers = <1>;
         };
 
         combo_right_semicolon {
             bindings = <&kp DE_SEMICOLON>;
             key-positions = <9 25 26>;
+            layers = <0 1>;
         };
 
         combo_right_minus {
             bindings = <&kp DE_MINUS>;
             key-positions = <9 26>;
+            layers = <0 1>;
         };
 
         combo_right_underscore {
             bindings = <&kp DE_UNDERSCORE>;
             key-positions = <9 24 26>;
+            layers = <0 1>;
         };
 
         combo_right_apostrophe {
             bindings = <&kp DE_APOSTROPHE>;
             key-positions = <11 26>;
+            layers = <0 1>;
         };
 
         combo_right_dquotes {
             bindings = <&kp DE_DOUBLE_QUOTES>;
             key-positions = <10 26>;
+            layers = <0 1>;
         };
 
         combo_right_backspace {
